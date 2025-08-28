@@ -31,10 +31,6 @@ app.get("/.well-known/assetlinks.json", (req, res) => {
   res.json(assetLinks);
 });
 
-app.get(/.*/, (req, res) => {
-  res.redirect("/");
-});
-
 app.get('/', (req, res) => {
     res.send('Hello World');
 });
